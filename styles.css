@@ -25,6 +25,10 @@
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
+        display: flex; 
+        justify-content: 
+        center; align-items: 
+        center;
     }
 }
 body {
