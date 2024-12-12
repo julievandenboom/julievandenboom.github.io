@@ -25,10 +25,7 @@
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
-        display: flex; 
-        justify-content: 
-        center; align-items: 
-        center;
+        
     }
 }
 body {
@@ -41,6 +38,10 @@ h1 {
 img {
   max-width: 100%; /* Scale down to fit the container */
   height: auto; /* Maintain the aspect ratio */
+  display: flex; 
+  justify-content: 
+  center; align-items: 
+  center;
 }
 
 body {
