@@ -35,7 +35,7 @@ h1 {
     font-size: 2.5rem; /* Scales with the body font size */
 }
 img {
-    max-width: 50%;
+    max-width: 100;
     height: 50;
 }
 
