@@ -42,9 +42,7 @@ img {
   max-width: 100%; /* Scale down to fit the container */
   height: auto; /* Maintain the aspect ratio */
   display: flex; 
-  justify-content: 
-  center; align-items: 
-  center;
+  
 }
 
 body {
