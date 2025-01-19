@@ -112,3 +112,17 @@ footer {
 .about-text {
     max-width: 600px;
 }
+.issues-content {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Space between the image and text */
+}
+
+.issues-content img {
+    max-width: 300px; /* Adjust width as needed */
+    height: auto;
+}
+
+.issues-text {
+    max-width: 600px;
+}
