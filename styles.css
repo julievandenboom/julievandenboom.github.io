@@ -125,4 +125,5 @@ footer {
 
 .issues-text {
     max-width: 600px;
+    text-align: justify;
 }
