@@ -113,10 +113,10 @@ footer {
     max-width: 600px;
 }
 .issues-content {
-    display: flex;
-    max-width: 300px;
-    align-items: flex-start; /* Aligns items at the top */
-    gap: 20px; /* Space between the image and text */
+    margin: 20px auto; /* Center with vertical and horizontal margins */
+    max-width: 800px;  /* Match the width of the About section */
+    padding: 10px;     /* Add internal spacing */
+    text-align: justify; /* Ensure the text alignment matches */
 }
 
 .issues-content img {
