@@ -121,8 +121,6 @@ footer {
 
 .issues-content img {
     flex-direction: column;
-    max-width: 300px; /* Adjust width as needed */
-    max-width: 300px;
     height: auto;
 }
 
