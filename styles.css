@@ -114,7 +114,7 @@ footer {
 .issues-content {
     flex-direction: column;
     margin: 20px auto; /* Center with vertical and horizontal margins */
-    max-width: 800px;  /* Match the width of the About section */
+    max-width: 300px;  /* Match the width of the About section */
     padding: 10px;     /* Add internal spacing */
     text-align: justify; /* Ensure the text alignment matches */
 }
