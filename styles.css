@@ -25,109 +25,108 @@
 }
 
 /* Mobile */
+/* Mobile */
 @media (max-width: 480px) {
     .container {
+        flex-direction: column;
+        width: 100%; /* Ensure the container takes full width */
         padding: 10px;
     }
-}
 
-body {
-    font-size: 1rem; /* Base font size */
-}
-
-h1 {
-    font-size: 2.5rem; /* Scales with the body font size */
-}
-img {
-  max-width: 100%; /* Scale down to fit the container */
-  height: auto; /* Maintain the aspect ratio */
-  display: flex; 
-  
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-
-header {
-    background: #24159d;
-    color: black;
-    padding: 1rem 0;
-    text-align: center;
-    display: flex;
-    justify-content: center; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Ensure the header takes full width */
+    body {
+        font-size: 1rem; /* Base font size */
     }
-}
 
+    h1 {
+        font-size: 2.5rem; /* Scales with the body font size */
+    }
 
-  nav ul {
+    img {
+        max-width: 100%; /* Scale down to fit the container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    header {
+        background: #24159d;
+        color: black;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%; /* Ensure the header takes full width */
+    }
+
+    nav ul {
+        list-style: none;
         padding: 0;
-        margin: 0; /* Adjust margin */
+        margin: 0; /* Adjust margin to avoid overflow */
+        width: 100%; /* Ensure UL takes full width */
     }
 
- nav ul li {
-        margin: 0 0 10px 0; /* Adjust margin */
+    nav ul li {
+        display: block; /* Stack list items vertically for mobile */
+        margin: 10px 0; /* Add vertical spacing */
+        text-align: center; /* Center text within each LI */
     }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        display: block; /* Make the link fill its container */
+    }
+
+    section {
+        /* Add any necessary mobile adjustments for sections */
+    }
+
+    .gallery {
+        flex-direction: column; /* Stack items vertically for mobile */
+        align-items: center; /* Center items */
+    }
+
+    .gallery-item {
+        flex: 1 1 100%; /* Make items take full width */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem 0;
+        background: #333;
+        color: #fff;
+        width: 100%; /* Ensure the footer takes full width */
+    }
+
+    .about-content {
+        display: flex;
+        align-items: flex-start; /* Aligns items at the top */
+        gap: 20px; /* Space between the image and text */
+        flex-direction: column; /* Stack items vertically for mobile */
+    }
+
+    .about-content img {
+        max-width: 300px; /* Adjust width as needed */
+        height: auto;
+    }
+
+    .about-text {
+        max-width: 600px;
+    }
+
+    .issues-content {
+        flex-direction: column;
+        margin: 20px auto; /* Center with vertical and horizontal margins */
+        max-width: 300px;  /* Match the width of the About section */
+        padding: 10px;     /* Add internal spacing */
+        text-align: justify; /* Ensure the text alignment matches */
+    }
+
+    .issues-content img {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .issues-text {
+        max-width: 600px;
+        text-align: justify;
+    }
 }
 
-section {
-   
-}
-
-.gallery {
-    flex-direction: column; /* Stack items vertically for mobile */
-    align-items: center; /* Center items */
-
-.gallery-item {
-    flex: 1 1 100%; /* Make items take full width */
-    margin: 10px 0; /* Adjust margin */
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-}
-.about-content {
-    display: flex;
-    align-items: flex-start; /* Aligns items at the top */
-    gap: 20px; /* Space between the image and text */
-}
-
-.about-content img {
-    max-width: 300px; /* Adjust width as needed */
-    height: auto;
-}
-
-.about-text {
-    max-width: 600px;
-}
-.issues-content {
-    flex-direction: column;
-    margin: 20px auto; /* Center with vertical and horizontal margins */
-    max-width: 300px;  /* Match the width of the About section */
-    padding: 10px;     /* Add internal spacing */
-    text-align: justify; /* Ensure the text alignment matches */
-}
-
-.issues-content img {
-    flex-direction: column;
-    height: auto;
-}
-
-.issues-text {
-    max-width: 600px;
-    text-align: justify;
-}
