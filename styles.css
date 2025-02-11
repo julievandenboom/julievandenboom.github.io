@@ -27,11 +27,10 @@
 /* Mobile */
 @media (max-width: 480px) {
     .container {
-        flex-direction: column;
-        width: 100%; /* Make sure the container takes full width */
         padding: 10px;
     }
 }
+
 body {
     font-size: 1rem; /* Base font size */
 }
@@ -60,15 +59,14 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+  nav ul {
+        padding: 0;
+        margin: 0; /* Adjust margin */
+    }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+ nav ul li {
+        margin: 0 0 10px 0; /* Adjust margin */
+    }
 
 nav a {
     color: #fff;
