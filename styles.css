@@ -52,12 +52,20 @@ body {
     line-height: 1.6;
 }
 
+
 header {
     background: #24159d;
     color: black;
     padding: 1rem 0;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Ensure the header takes full width */
+    }
 }
+
 
   nav ul {
         padding: 0;
