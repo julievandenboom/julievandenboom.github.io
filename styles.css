@@ -28,7 +28,8 @@
 @media (max-width: 480px) {
     .container {
         flex-direction: column;
-        
+        width: 100%; /* Make sure the container takes full width */
+        padding: 10px;
     }
 }
 body {
