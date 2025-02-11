@@ -78,16 +78,12 @@ section {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
+    flex-direction: column; /* Stack items vertically for mobile */
+    align-items: center; /* Center items */
 
 .gallery-item {
-    background: #eee;
-    margin: 10px;
-    padding: 20px;
-    flex: 1 1 calc(33% - 40px);
-    box-sizing: border-box;
+    flex: 1 1 100%; /* Make items take full width */
+    margin: 10px 0; /* Adjust margin */
 }
 
 footer {
