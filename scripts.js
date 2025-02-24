@@ -34,3 +34,8 @@ function toggleCard(card) {
         content.style.display = "none";
     }
 }
+
+// Add touch event listeners for mobile support
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('touchstart', () => toggleCard(card));
+});
