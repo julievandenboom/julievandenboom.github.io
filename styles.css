@@ -1,8 +1,6 @@
 /* Basic reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    max-width: 100%;
 }
 
 html {
@@ -146,9 +144,11 @@ nav {
     .nav-links {
         display: flex;
         flex-direction: column;
+        align-items: center; /* Center align */
         width: 100%;
-        text-align: center;
     }
+}
+
 
         .nav-links.active {
             display: flex;
@@ -190,11 +190,14 @@ nav {
 }
 
 /* Responsive Styles */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .about-content {
-        flex-direction: row;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center; /* Ensures proper alignment */
+        text-align: center; /* Centers text */
     }
+}
+
 
         .about-content img {
             margin-right: 20px;
@@ -594,3 +597,12 @@ header, .donate-button, nav, .card, .card-content, .social-icons a {
         transform: scale(1);
     }
 }
+@media (max-width: 768px) {
+    * {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
