@@ -131,6 +131,33 @@ nav {
     z-index: -1;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+    .menu-icon i {
+        font-size: 2rem;
+        color: white;
+    }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
 /* About Section */
 #about {
     padding: 20px;
@@ -184,6 +211,7 @@ nav {
 }
 
 .issues-content {
+    display: flex;
     flex-direction: column;
     margin: 20px auto;
     max-width: 800px;
@@ -361,3 +389,100 @@ footer {
         font-size: 0.8rem;
     }
 }
+/* General mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .sub-header {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .about-content img {
+            margin: 0 0 20px 0;
+        }
+
+    .issues-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .issues-content img {
+            margin: 0 0 20px 0;
+        }
+
+    .card {
+        padding: 10px;
+    }
+
+        .card h3 {
+            font-size: 1.2rem;
+        }
+
+    .card-content {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .sub-header {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 5px;
+    }
+
+        .card h3 {
+            font-size: 1rem;
+        }
+
+    .card-content {
+        font-size: 0.8rem;
+    }
+}
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+    .nav-links.active {
+        display: flex;
+    }
