@@ -43,6 +43,20 @@ function toggleCard(card) {
     content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
 }
 
+// --- Progress Bar Animation ---
+function progress_bar() {
+    const progressBars = document.querySelectorAll('.ce_ixelgen_progress_bar .item_bar');
+    
+    progressBars.forEach(bar => {
+        const progress = bar.querySelector('.progress');
+        const targetWidth = progress.getAttribute('data-progress'); // Get progress from a custom data attribute
+        
+        if (targetWidth) {
+            progress.style.width = targetWidth + '%';
+        }
+    });
+}
+
 // --- DOMContentLoaded Initialization ---
 document.addEventListener('DOMContentLoaded', function () {
     // Menu toggle for mobile
@@ -75,56 +89,4 @@ document.addEventListener('DOMContentLoaded', function () {
 $(document).ready(function () {
     progress_bar();
 });
-
-function progress_bar() {
-    var speed = 30;
-    var max_value = 5000;
-    var items = $('.progress_bar').find('.progress_bar_item');
-
-    items.each(function () {
-        var item = $(this).find('.progress');
-        var itemValue = item.data('progress');
-
-        // Ensure itemValue does not exceed max_value
-        itemValue = Math.min(itemValue, max_value);
-
-        var i = 0;
-        var value = $(this);
-
-        var count = setInterval(function () {
-            if (i <= itemValue) {
-                var iStr = i.toString();
-                var percentageStr = ((i / max_value) * 100).toFixed(2) + '%';
-                item.css({
-                    'width': percentageStr
-                });
-                value.find('.item_value').html(iStr + ' (' + percentageStr + ')');
-            }
-            else {
-                clearInterval(count);
-            }
-            i++;
-        }, speed);
-    });
-}
-
-// Function to update the progress bar and values dynamically
-function updateProgressBar() {
-    // Get the progress bar element and its data attributes
-    const progressBar = document.querySelector('.progress');
-    const itemValue = document.querySelector('.item_value');
-
-    // Retrieve data-doors and data-progress from HTML
-    const doorsKnocked = itemValue.getAttribute('data-doors');
-    const progressPercent = itemValue.getAttribute('data-progress');
-
-    // Set the width of the progress bar dynamically based on progress
-    progressBar.style.width = progressPercent + '%';
-
-    // Update the text in item_value to display the doors and percentage
-    itemValue.textContent = `${doorsKnocked} (${progressPercent}%)`;
-}
-
-// Call the updateProgressBar function on page load
-document.addEventListener('DOMContentLoaded', updateProgressBar);
 
