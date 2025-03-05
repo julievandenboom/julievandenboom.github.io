@@ -363,7 +363,7 @@ footer {
 
  .ce_ixelgen_progress_bar .item_bar {
     position: relative;
-    height: 20px;  /* Specify height */
+    height: 30px;  /* Specify height */
     width: 100%;
     background-color: #ddd;
     border-radius: 4px;
