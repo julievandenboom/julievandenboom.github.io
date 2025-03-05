@@ -127,3 +127,4 @@ function updateProgressBar() {
 
 // Call the updateProgressBar function on page load
 document.addEventListener('DOMContentLoaded', updateProgressBar);
+
