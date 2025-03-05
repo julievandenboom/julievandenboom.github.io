@@ -363,10 +363,10 @@ footer {
 
     .ce_ixelgen_progress_bar .item_bar {
         position: relative;
-        height: 20px; /* Set a valid height */
+        height: 20px;
         width: 100%;
         background-color: #ddd;
-        border-radius: 6px;
+        border-radius: 4px;
     }
 
         .ce_ixelgen_progress_bar .item_bar .progress {
@@ -380,9 +380,6 @@ footer {
             border-radius: 4px;
             transition: width 100ms ease;
         }
-
-
-
 
 
 
@@ -479,4 +476,5 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
