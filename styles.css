@@ -345,41 +345,42 @@ footer {
     margin: 0 auto;
 }
 
-    .ce_ixelgen_progress_bar .progress_bar_item {
-        margin-bottom: 2rem;
+.ce_ixelgen_progress_bar .progress_bar_item {
+    margin-bottom: 2rem;
     }
 
-    .ce_ixelgen_progress_bar .item_label,
-    .ce_ixelgen_progress_bar .item_value {
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: #333;
-        margin-bottom: 0.5rem;
+.ce_ixelgen_progress_bar .item_label,
+.ce_ixelgen_progress_bar .item_value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
     }
 
-    .ce_ixelgen_progress_bar .item_value {
-        font-weight: 400;
+.ce_ixelgen_progress_bar .item_value {
+    font-weight: 400;
     }
 
-    .ce_ixelgen_progress_bar .item_bar {
-        position: relative;
-        height: 20px;
-        width: 100%;
-        background-color: #ddd;
-        border-radius: 4px;
-    }
+ .ce_ixelgen_progress_bar .item_bar {
+    position: relative;
+    height: 20px;  /* Specify height */
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 4px;
+}
 
-        .ce_ixelgen_progress_bar .item_bar .progress {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: var(--progress-width, 2%); /* Default to 2% */
-            height: 100%;
-            background-color: green;
-            border-radius: 4px;
-            transition: width 100ms ease;
-        }
+
+ .ce_ixelgen_progress_bar .item_bar .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--progress-width, 2%); /* Default to 2% */
+    height: 100%;
+    background-color: green;
+    border-radius: 4px;
+    transition: width 100ms ease;
+}
 
 
 
