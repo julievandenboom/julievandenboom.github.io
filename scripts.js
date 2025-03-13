@@ -94,7 +94,7 @@ function progress_bar() {
         var count = setInterval(function () {
             if (i <= itemValue) {
                 var iStr = i.toString();
-                var percentageStr = ((i / max_value) * 100).toFixed(2) + '%';
+                var percentageStr = ((i / max_value) * 100).toFixed(4) + '%';
                 item.css({
                     'width': percentageStr
                 });
