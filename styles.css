@@ -375,7 +375,7 @@ footer {
     left: 0;
     top: 0;
     bottom: 0;
-    width: var(--progress-width, 4%); /* Default to 2% */
+    width: var(--progress-width, 6%); /* Default to 2% */
     height: 100%;
     background-color: green;
     border-radius: 4px;
