@@ -314,7 +314,9 @@ nav {
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f4f4f4;
+    border: 2px solid #008000;
 }
+
 /* Footer */
 footer {
     text-align: center;
