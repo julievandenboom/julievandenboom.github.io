@@ -25,15 +25,27 @@ header {
     position: relative;
     padding-bottom: 10px;
 }
-.splash {
-    position: absolute;
-    bottom: 10px;   /* Distance from bottom */
-    left: 20px;     /* Distance from left */
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fec940;  /* Or any color from your palette */
-    z-index: 10;     /* Ensure it’s above background elements */
+.header-with-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #694527; /* Or whatever background you're using */
+    color: #fec940;
+    text-align: center;
+    overflow: hidden;
 }
+
+.splash-logo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px; /* Adjust size as needed */
+    z-index: 5;
+}
+
 
 
 /* Centered Text Container */
