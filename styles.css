@@ -38,13 +38,28 @@ header {
     overflow: hidden;
 }
 
-.splash-logo {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 100px; /* Adjust size as needed */
-    z-index: 5;
+.vote-august {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fec940;
+    margin-top: 0.5rem;
+    background-color: #1a1a1a;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #fec940;
+    animation: pulse-glow 2s infinite;
 }
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px #fec940;
+  }
+  50% {
+    box-shadow: 0 0 15px #fec940;
+  }
+}
+
 
 
 
