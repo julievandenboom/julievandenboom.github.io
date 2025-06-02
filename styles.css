@@ -25,6 +25,16 @@ header {
     position: relative;
     padding-bottom: 10px;
 }
+.splash {
+    position: absolute;
+    bottom: 10px;   /* Distance from bottom */
+    left: 20px;     /* Distance from left */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fec940;  /* Or any color from your palette */
+    z-index: 10;     /* Ensure it’s above background elements */
+}
+
 
 /* Centered Text Container */
 .centered-text {
