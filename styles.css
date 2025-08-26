@@ -407,6 +407,19 @@ footer {
 .vision-text {
     padding-bottom: 10px;
 }
+.qr-code img {
+    width: 120px;       /* Smaller width */
+    height: 120px;      /* Smaller height */
+    cursor: pointer;    
+    border: 2px solid #004aad;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qr-code img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
 
 /* Progress Bar */
 .ce_ixelgen_progress_bar {
@@ -546,6 +559,7 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
 
 
