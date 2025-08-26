@@ -407,13 +407,20 @@ footer {
 .vision-text {
     padding-bottom: 10px;
 }
+.qr-code {
+    display: inline-block;
+    padding: 10px;               /* Space around the QR code */
+    border: 2px solid black;     /* Black outline around the box */
+    border-radius: 12px;         /* Rounded corners */
+    text-align: center;
+    margin-top: 20px;
+    background-color: #ffffff;   /* Optional: white background */
+}
+
 .qr-code img {
-    width: 80px;       /* Small size */
-    height: 80px;      /* Small size */
-    max-width: 25%;    /* Keeps it from getting too big on large screens */
+    width: 200px;       /* Original image size */
+    height: 200px;      /* Original image size */
     cursor: pointer;
-    border: 2px solid #004aad;
-    border-radius: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -568,6 +575,7 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
 
 
