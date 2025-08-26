@@ -408,9 +408,10 @@ footer {
     padding-bottom: 10px;
 }
 .qr-code img {
-    width: 120px;       /* Smaller width */
-    height: 120px;      /* Smaller height */
-    cursor: pointer;    
+    width: 80px;       /* Small size */
+    height: 80px;      /* Small size */
+    max-width: 25%;    /* Keeps it from getting too big on large screens */
+    cursor: pointer;
     border: 2px solid #004aad;
     border-radius: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -418,8 +419,16 @@ footer {
 
 .qr-code img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+.qr-code p {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #004aad;
+    font-weight: bold;
+}
+
 
 /* Progress Bar */
 .ce_ixelgen_progress_bar {
@@ -559,6 +568,7 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
 
 
