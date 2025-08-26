@@ -16,19 +16,26 @@ body {
     text-align: center;
 }
 .signup-button {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #004aad;
-    color: #fff;
+    display: inline-block;       /* Makes it block-like but still inline */
+    padding: 14px 28px;          /* Size of the button */
+    background-color: #004aad;   /* Button color */
+    color: #ffffff;              /* Text color */
+    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+    text-decoration: none;       /* Removes underline */
+    border-radius: 8px;          /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .signup-button:hover {
-    background-color: #00337f;
+    background-color: #00337f;   /* Darker on hover */
+    transform: scale(1.05);      /* Slight zoom effect */
 }
+
+.signup-button:active {
+    transform: scale(0.98);      /* Pressed effect */
+}
+
 
 
 /* Header */
@@ -539,6 +546,7 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
 
 
