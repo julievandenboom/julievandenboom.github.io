@@ -55,7 +55,8 @@ header {
     justify-content: center;
     padding: 2rem;
     background-color: #24159d; /* Or whatever background you're using */
-    color: ##ffffff;  /* This is green text */
+    color: #ffffff;  /* White text */
+
     text-align: center;
     overflow: hidden;
 }
@@ -575,6 +576,7 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
 
 
