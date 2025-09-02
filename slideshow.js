@@ -1,18 +1,6 @@
-/**********
-Date: 09/1/2025
-Author: J.Cole
-Exercise: Campaign Slideshow (Randomized)
-**********/
-
-/**********
-Date: 09/1/2025
-Author: J.Cole
-Exercise: Campaign Slideshow (Randomized)
-**********/
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Images and captions array
+    // --- Slideshow code (your existing code) ---
     const githubImages = [
         { url: "/images/asigns.jpg", caption: "Campaign signs ready to go!" },
         { url: "/images/parade.jpg", caption: "Marching in the Lansing parade" },
@@ -27,51 +15,55 @@ document.addEventListener("DOMContentLoaded", () => {
     const slidesContainer = document.querySelector(".small-slideshow");
     const dotsContainer = document.getElementById("slide-dots");
 
-    if (!slidesContainer || !dotsContainer) return; // stop if elements are missing
+    if (slidesContainer && dotsContainer) {
+        const slides = [];
+        const dots = [];
 
-    const slides = [];
-    const dots = [];
+        githubImages.forEach((imgObj, index) => {
+            const slideDiv = document.createElement("div");
+            slideDiv.className = "slide fade";
+            slideDiv.innerHTML = `<img src="${imgObj.url}" alt="${imgObj.caption}"><div class="caption">${imgObj.caption}</div>`;
+            slidesContainer.appendChild(slideDiv);
+            slides.push(slideDiv);
 
-    // Create slides and dots dynamically
-    githubImages.forEach((imgObj, index) => {
-        // Slide
-        const slideDiv = document.createElement("div");
-        slideDiv.className = "slide fade";
-        slideDiv.innerHTML = `<img src="${imgObj.url}" alt="${imgObj.caption}"><div class="caption">${imgObj.caption}</div>`;
-        slidesContainer.appendChild(slideDiv);
-        slides.push(slideDiv);
+            const dotSpan = document.createElement("span");
+            dotSpan.className = "dot";
+            dotSpan.onclick = () => currentSlide(index + 1);
+            dotsContainer.appendChild(dotSpan);
+            dots.push(dotSpan);
+        });
 
-        // Dot
-        const dotSpan = document.createElement("span");
-        dotSpan.className = "dot";
-        dotSpan.onclick = () => currentSlide(index + 1);
-        dotsContainer.appendChild(dotSpan);
-        dots.push(dotSpan);
-    });
+        let slideIndex = 1;
+        function showSlides(n) {
+            if (n > slides.length) slideIndex = 1;
+            if (n < 1) slideIndex = slides.length;
 
-    let slideIndex = 1;
+            slides.forEach(slide => slide.style.display = "none");
+            dots.forEach(dot => dot.classList.remove("active"));
 
-    function showSlides(n) {
-        if (n > slides.length) { slideIndex = 1; }
-        if (n < 1) { slideIndex = slides.length; }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active");
+        }
 
-        slides.forEach(slide => slide.style.display = "none");
-        dots.forEach(dot => dot.classList.remove("active"));
+        function currentSlide(n) { showSlides(slideIndex = n); }
+        function plusSlides(n) { showSlides(slideIndex += n); }
 
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.add("active");
+        showSlides(slideIndex);
+        setInterval(() => plusSlides(1), 5000);
     }
 
-    function currentSlide(n) { showSlides(slideIndex = n); }
-    function plusSlides(n) { showSlides(slideIndex += n); }
+    // --- Menu toggle code ---
+    const menuIcon = document.querySelector(".menu-icon");
+    const navLinks = document.querySelector(".nav-links");
 
-    // Initialize slideshow
-    showSlides(slideIndex);
-
-    // Auto-slide every 5 seconds
-    setInterval(() => plusSlides(1), 5000);
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 
 });
+
 
 
 
