@@ -5,6 +5,7 @@ Exercise: Campaign Slideshow (Randomized)
 **********/
 // GitHub-hosted images array
 const githubImages = [
+   const githubImages = [
     { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/asigns.jpg", caption: "Campaign signs ready to go!" },
     { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/parade.jpg", caption: "Marching in the Lansing parade" },
     { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
@@ -13,6 +14,8 @@ const githubImages = [
     { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/olivia.jpg", caption: "With Olivia at a campaign stop" },
     { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/photo1.jpg", caption: "Troll!" },
     { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/photo2.jpg", caption: "Group Photo!" }
+];
+
 ];
 
 const slidesContainer = document.querySelector(".small-slideshow");
@@ -62,6 +65,7 @@ showSlides(slideIndex);
 
 // Auto-slide every 5 seconds
 setInterval(() => plusSlides(1), 5000);
+
 
 
 
