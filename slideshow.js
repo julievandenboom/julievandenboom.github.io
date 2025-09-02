@@ -6,14 +6,14 @@ Exercise: Campaign Slideshow (Randomized)
 // GitHub-hosted images array
 const githubImages = [
    const githubImages = [
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/asigns.jpg", caption: "Campaign signs ready to go!" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/parade.jpg", caption: "Marching in the Lansing parade" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/LaShawn.jpg", caption: "With LaShawn at a community event" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/lugnuts.jpg", caption: "At the Lugnuts game" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/olivia.jpg", caption: "With Olivia at a campaign stop" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/photo1.jpg", caption: "Troll!" },
-    { url: "https://raw.githubusercontent.com/julievandenboom/julievandenboom.github.io/main/images/photo2.jpg", caption: "Group Photo!" }
+    { url: "/images/asigns.jpg", caption: "Campaign signs ready to go!" },
+    { url: "/images/parade.jpg", caption: "Marching in the Lansing parade" },
+    { url: "/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
+    { url: "/images/LaShawn.jpg", caption: "With LaShawn at a community event" },
+    { url: "/images/lugnuts.jpg", caption: "At the Lugnuts game" },
+    { url: "/images/olivia.jpg", caption: "With Olivia at a campaign stop" },
+    { url: "/images/photo1.jpg", caption: "Troll!" },
+    { url: "/images/photo2.jpg", caption: "Group Photo!" }
 ];
 
 ];
@@ -65,6 +65,7 @@ showSlides(slideIndex);
 
 // Auto-slide every 5 seconds
 setInterval(() => plusSlides(1), 5000);
+
 
 
 
