@@ -3,9 +3,10 @@ Date: 09/1/2025
 Author: J.Cole
 Exercise: Campaign Slideshow (Randomized)
 **********/
-// GitHub-hosted images array
+
+document.addEventListener("DOMContentLoaded", () => {
+
 const githubImages = [
-   const githubImages = [
     { url: "/images/asigns.jpg", caption: "Campaign signs ready to go!" },
     { url: "/images/parade.jpg", caption: "Marching in the Lansing parade" },
     { url: "/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
@@ -16,22 +17,18 @@ const githubImages = [
     { url: "/images/photo2.jpg", caption: "Group Photo!" }
 ];
 
-];
-
 const slidesContainer = document.querySelector(".small-slideshow");
-const dotsContainer = slidesContainer.nextElementSibling; // assumes dots container is right after slideshow
+const dotsContainer = document.getElementById("slide-dots");
 const slides = [];
 const dots = [];
 
 githubImages.forEach((imgObj, index) => {
-    // Create slide
     const slideDiv = document.createElement("div");
     slideDiv.className = "slide fade";
     slideDiv.innerHTML = `<img src="${imgObj.url}" alt="${imgObj.caption}"><div class="caption">${imgObj.caption}</div>`;
     slidesContainer.appendChild(slideDiv);
     slides.push(slideDiv);
 
-    // Create dot
     const dotSpan = document.createElement("span");
     dotSpan.className = "dot";
     dotSpan.onclick = () => currentSlide(index + 1);
@@ -52,19 +49,15 @@ function showSlides(n) {
     dots[slideIndex - 1].classList.add("active");
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+function currentSlide(n) { showSlides(slideIndex = n); }
+function plusSlides(n) { showSlides(slideIndex += n); }
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Initialize
 showSlides(slideIndex);
-
-// Auto-slide every 5 seconds
 setInterval(() => plusSlides(1), 5000);
+
+});
+
+
 
 
 
