@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { url: "/images/LaShawn.jpg", caption: "With LaShawn at a community event" },
         { url: "/images/lugnuts.jpg", caption: "At the Lugnuts game" },
         { url: "/images/olivia.jpg", caption: "With Olivia at a campaign stop" },
-        { url: "/images/photo3.jpg", caption: "Troll!" },
-        { url: "/images/photo4.jpg", caption: "Group Photo!" }
+        { url: "/images/photo1.jpg", caption: "Troll!" },
+        { url: "/images/photo2.jpg", caption: "Group Photo!" }
     ];
 
     const slidesContainer = document.querySelector(".small-slideshow");
@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(() => plusSlides(1), 5000);
 
 });
+
 
 
 
