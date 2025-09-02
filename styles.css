@@ -15,6 +15,95 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
+/* Gallery container styles */
+/* Gallery container styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 32px 0;
+    padding: 0 10px;
+}
+
+    /* Gallery image styles */
+    .gallery img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        /* Hover effect */
+        .gallery img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            cursor: pointer;
+        }
+
+.slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+    .slide img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+.caption {
+    color: #fff;
+    font-size: .7rem;
+    padding: 8px 16px;
+    bottom: 0;
+    left: 0;
+    max-height: 30%; /* Keeps caption area proportional */
+    overflow-y: auto; /* Scroll if too long */
+    background: rgba(0,0,0,0.5);
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    white-space: normal; /* Allow wrapping */
+    word-break: break-word; /* Break long words */
+}
+
+
+
+/* Position the next button on the right */
+.next {
+    right: 0; /* distance from the right edge */
+    border-radius: 3px 0 0 3px; /* rounded left corners */
+}
+
+    /* Hover effect */
+    .prev:hover, .next:hover {
+        background: rgba(0,0,0,0.6);
+    }
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+    .dot.active {
+        background-color: #717171;
+    }
+
+
 .signup-button {
     display: inline-block;       /* Makes it block-like but still inline */
     padding: 14px 28px;          /* Size of the button */
@@ -349,9 +438,9 @@ nav {
 /* Stay in Touch Section */
 #stay-in-touch {
     text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 2rem;
+    padding: 10px; /* a little breathing room */
+    margin-bottom: 15px; /* slightly more space after section */
+    font-size: 1.8rem; /* slightly smaller heading */
     color: #24159d;
     font-weight: bold;
 }
@@ -407,15 +496,23 @@ footer {
 .vision-text {
     padding-bottom: 10px;
 }
+
 .qr-code {
     display: inline-block;
-    padding: 10px;               /* Space around the QR code */
-    border: 2px solid black;     /* Black outline around the box */
-    border-radius: 12px;         /* Rounded corners */
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
     text-align: center;
-    margin-top: 20px;
-    background-color: #ffffff;   /* Optional: white background */
+    margin-top: 8px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+    .qr-code:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
 
 .qr-code img {
     width: 200px;       /* Original image size */
@@ -424,17 +521,72 @@ footer {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.qr-code img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
 
 .qr-code p {
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 12px;
     color: #004aad;
     font-weight: bold;
 }
+.signup-qr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.signup-content {
+    min-width: 220px;
+    text-align: left;
+}
+.signup-photos-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1400px; /* make it wider on desktop */
+    margin: 0 auto; /* keeps it centered */
+    padding: 20px; /* adds breathing space */
+}
+
+.small-slideshow {
+    max-width: 1200px;
+    min-width: 200px;
+}
+
+    .small-slideshow .slide img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+@media (min-width: 1024px) {
+    .small-slideshow {
+        max-width: 1200px; /* wider for big screens */
+    }
+
+        .small-slideshow .slide img {
+            height: 400px; /* make it taller on desktop */
+        }
+}
+
+
+
+@media (max-width: 600px) {
+    .signup-qr-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .signup-content {
+        text-align: center;
+    }
+}
+
 
 
 /* Progress Bar */
