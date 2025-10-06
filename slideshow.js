@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // --- Slideshow code ---
     const githubImages = [
-        { url: "/images/asigns.jpg", caption: "Campaign signs ready to go!" },
+        { url: "https://julievandenboom.com/images/asigns.jpg", caption: "Campaign signs ready to go!" },
         { url: "/images/parade.jpg", caption: "Marching in the Lansing parade" },
         { url: "/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
         { url: "/images/LaShawn.jpg", caption: "With LaShawn at a community event" },
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 
 
 
