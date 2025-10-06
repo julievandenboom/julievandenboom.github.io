@@ -384,35 +384,37 @@ nav ul li a:hover {
 .thumbnail-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
     margin: 20px 0;
 }
 
 .thumbnail-gallery figure {
-    width: 120px;          /* thumbnail width */
-    text-align: center;
+    width: 100px;   /* smaller width */
+    height: 70px;   /* fixed height */
     margin: 0;
+    text-align: center;
     font-family: Arial, sans-serif;
+    overflow: hidden;  /* crop anything extra */
 }
 
 .thumbnail-gallery img {
-    width: 100%;
-    height: 80px;          /* keeps all images uniform */
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    width: 100%;          /* fits figure width */
+    height: 100%;         /* fills figure height */
+    object-fit: cover;    /* crop without stretching */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: transform 0.2s;
     cursor: pointer;
 }
 
 .thumbnail-gallery img:hover {
-    transform: scale(1.05);  /* subtle zoom effect */
+    transform: scale(1.05);
 }
 
 .thumbnail-gallery figcaption {
-    font-size: 0.7rem;
-    margin-top: 4px;
+    font-size: 0.6rem;    /* smaller caption text */
+    margin-top: 2px;
     color: #333;
 }
 
@@ -465,6 +467,7 @@ footer {
     .signup-qr-container { flex-direction: column; gap: 16px; }
     .small-slideshow { height: 180px; }
 }
+
 
 
 
