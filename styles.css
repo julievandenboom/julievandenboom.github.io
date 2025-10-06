@@ -727,6 +727,46 @@ footer {
         font-size: 0.8rem;
     }
 }
+.slide {
+  display: none;
+}
+.slide.show {
+  display: block;
+}
+.small-slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+}
+.caption {
+  text-align: center;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #717171;
+}
+#slide-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
 
 
 
