@@ -381,6 +381,20 @@ nav ul li a:hover {
     color: #004aad;
     font-weight: bold;
 }
+.campaign-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.campaign-images img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
 /* ===========================
    Footer & Socials
@@ -430,4 +444,5 @@ footer {
     .signup-qr-container { flex-direction: column; gap: 16px; }
     .small-slideshow { height: 180px; }
 }
+
 
