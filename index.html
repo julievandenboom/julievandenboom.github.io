@@ -156,49 +156,44 @@
 
 
         <!-- Campaign Metrics / Progress Bar -->
-        <div class="ce_ixelgen_progress_bar block">
-            <h2>Campaign Metrics</h2>
-            <hr>
-            <div class="progress_bar">
-                <div class="progress_bar_item grid-x">
-                    <div class="item_label cell auto">Doors Knocked</div>
-                    <div class="item_value cell shrink" data-doors=" 7,001" data-progress="140" data-goal="5000">
-                        <span class="current-value">7,001(140%)</span>
-                        <span class="total-goal">Total Goal: 5000</span>
-                    </div>
-                    <div class="item_bar cell" style="--progress-width: 140%>
-                        <div class="progress"></div>
-
-                    </div>
-                </div>
+        <!-- Campaign Metrics / Progress Bar -->
+<div class="ce_ixelgen_progress_bar block">
+    <h2>Campaign Metrics</h2>
+    <hr>
+    <div class="progress_bar">
+        <div class="progress_bar_item grid-x">
+            <div class="item_label cell auto">Doors Knocked</div>
+            <div class="item_value cell shrink" data-doors="7001" data-progress="140" data-goal="5000">
+                <span class="current-value">7,001 (140%)</span>
+                <span class="total-goal">Total Goal: 5000</span>
             </div>
-        </div>
-        <section id="stay-in-touch">
-        <h2>Stay in Touch</h2>
-            <p>Sign up to get involved with our campaign!</p>
-            <p>Scan or click the QR Code!</p>
-
-            <div class="signup-photos-container">
-            <div class="signup-slide-content">
-            <div class="signup-qr">
-            <div class="qr-code">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv8Ai-JIIaRynXmShLd3jUFwTCATeiEh-qDmmTSbpgAOWiyA/viewform" target="_blank" rel="noopener">
-                <img src="qrjulie.png" alt="Scan QR code to fill out form" />
-                </a>
-           </div>
-           </div>
-
-            <!-- EMPTY containers for slideshow (JS will fill these in) -->
-          <div class="slideshow-container small-slideshow"></div>
-          <div id="slide-dots"></div>
-          <script src="slideshow.js"></script>
-          </div>
-          </div>
-
+            <div class="item_bar cell" style="--progress-width: 140%">
+                <div class="progress"></div>
             </div>
-        </div>
         </div>
     </div>
+</div>
+
+<!-- Stay in Touch Section -->
+<section id="stay-in-touch">
+    <h2>Stay in Touch</h2>
+    <p>Sign up to get involved with our campaign!</p>
+    <p>Scan or click the QR Code!</p>
+
+    <div class="signup-qr">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv8Ai-JIIaRynXmShLd3jUFwTCATeiEh-qDmmTSbpgAOWiyA/viewform" target="_blank" rel="noopener">
+            <img src="qrjulie.png" alt="Scan QR code to fill out form" />
+        </a>
+    </div>
+
+    <!-- Slideshow containers -->
+    <div class="slideshow-container small-slideshow"></div>
+    <div id="slide-dots"></div>
+</section>
+
+<!-- Load JS after containers -->
+<script src="slideshow.js"></script>
+
 </section>
 
 
