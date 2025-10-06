@@ -384,16 +384,23 @@ nav ul li a:hover {
 .campaign-images {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 10px;
     justify-content: center;
     margin: 20px 0;
 }
 
 .campaign-images img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 120px;   /* small thumbnail size */
+    height: 80px;   /* optional fixed height to keep uniform */
+    object-fit: cover;  /* crops if necessary to fit dimensions */
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    cursor: pointer;    /* optional, looks clickable */
+    transition: transform 0.2s;
+}
+
+.campaign-images img:hover {
+    transform: scale(1.05);  /* small zoom on hover */
 }
 
 /* ===========================
@@ -444,5 +451,6 @@ footer {
     .signup-qr-container { flex-direction: column; gap: 16px; }
     .small-slideshow { height: 180px; }
 }
+
 
 
