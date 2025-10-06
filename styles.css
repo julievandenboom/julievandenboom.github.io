@@ -381,27 +381,41 @@ nav ul li a:hover {
     color: #004aad;
     font-weight: bold;
 }
-.campaign-images {
+.thumbnail-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
     margin: 20px 0;
 }
 
-.campaign-images img {
-    width: 120px;   /* small thumbnail size */
-    height: 80px;   /* optional fixed height to keep uniform */
-    object-fit: cover;  /* crops if necessary to fit dimensions */
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    cursor: pointer;    /* optional, looks clickable */
-    transition: transform 0.2s;
+.thumbnail-gallery figure {
+    width: 120px;          /* thumbnail width */
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.campaign-images img:hover {
-    transform: scale(1.05);  /* small zoom on hover */
+.thumbnail-gallery img {
+    width: 100%;
+    height: 80px;          /* keeps all images uniform */
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
 }
+
+.thumbnail-gallery img:hover {
+    transform: scale(1.05);  /* subtle zoom effect */
+}
+
+.thumbnail-gallery figcaption {
+    font-size: 0.7rem;
+    margin-top: 4px;
+    color: #333;
+}
+
 
 /* ===========================
    Footer & Socials
@@ -451,6 +465,7 @@ footer {
     .signup-qr-container { flex-direction: column; gap: 16px; }
     .small-slideshow { height: 180px; }
 }
+
 
 
 
