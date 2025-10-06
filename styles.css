@@ -205,93 +205,30 @@ nav ul li a:hover {
    Slideshow
 =========================== */
 .small-slideshow {
-    position: relative;
-    width: 100%;
     max-width: 700px;
-    margin: 30px auto;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 20px auto;
+    position: relative;
 }
 
 .slide {
     display: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.slide.show {
-    display: block;
-    opacity: 1;
 }
 
 .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 8px;
 }
 
 .caption {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 16px;
+    bottom: 8px;
+    left: 16px;
+    color: white;
     background: rgba(0,0,0,0.5);
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 0 0 8px 8px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-#slide-dots {
-    text-align: center;
-    margin-top: 12px;
-}
-
-.dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 4px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-
-/* Optional next/prev */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 8px 12px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 3px;
-    user-select: none;
-    transform: translateY(-50%);
-    transition: background 0.3s;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.6);
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
 
 /* ===========================
    Centered Text & Sub-Headers
@@ -493,3 +430,4 @@ footer {
     .signup-qr-container { flex-direction: column; gap: 16px; }
     .small-slideshow { height: 180px; }
 }
+
