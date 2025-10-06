@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     // --- Slideshow code ---
     const githubImages = [
-        { url: "https://julievandenboom.com/images/asigns.jpg", caption: "Campaign signs ready to go!" },
-        { url: "https://julievandenboom.com/images/parade.jpg", caption: "Marching in the Lansing parade" },
-        { url: "https://julievandenboom.com/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
-        { url: "https://julievandenboom.com/images/LaShawn.jpg", caption: "With LaShawn at a community event" },
-        { url: "https://julievandenboom.com/images/lugnuts.jpg", caption: "At the Lugnuts game" },
-        { url: "https://julievandenboom.com/images/olivia.jpg", caption: "With Olivia at a campaign stop" },
+        { url: "/images/asigns.jpg", caption: "Campaign signs ready to go!" },
+        { url: "/parade.jpg", caption: "Marching in the Lansing parade" },
+        { url: "/images/canvassing.jpg", caption: "Canvassing in Lansing neighborhoods" },
+        { url: "/images/LaShawn.jpg", caption: "With LaShawn at a community event" },
+        { url: "/images/lugnuts.jpg", caption: "At the Lugnuts game" },
+        { url: "/images/olivia.jpg", caption: "With Olivia at a campaign stop" },
     ];
 
     const slidesContainer = document.querySelector(".small-slideshow");
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 
 
 
